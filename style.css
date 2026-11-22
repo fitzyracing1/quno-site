@@ -22,7 +22,7 @@ table{width:100%;border-collapse:collapse;background:var(--panel);border:1px sol
 th,td{text-align:left;padding:12px 14px;border-top:1px solid var(--line);vertical-align:top}
 thead th{border-top:0;color:var(--muted);font-weight:600;font-size:14px}
 td.price{white-space:nowrap;font-weight:700;color:var(--green)}
-td code{font-size:13px;word-break:break-all}
+td code{font-size:13px;white-space:nowrap}
 td p{margin:4px 0 0;color:var(--muted);font-size:14px}
 pre{background:#070a12;border:1px solid var(--line);border-radius:12px;padding:16px;overflow:auto;font-size:13.5px;line-height:1.5}
 code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
