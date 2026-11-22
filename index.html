@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quno: official and on-chain data for bots, paid per call over x402</title>
+<meta name="description" content="Quno sells official and on-chain data to bots, paid per call over x402 in USDC on Base: Base token risk checks ($0.02), x402 market data on ~40k paid services ($0.01), NOAA weather, NASA space weather, SatNOGS CubeSats. No account, no API key.">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#0b0f19">
+<link rel="canonical" href="https://fitzyracing1.github.io/quno-site/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Quno">
+<meta property="og:url" content="https://fitzyracing1.github.io/quno-site/">
+<meta property="og:title" content="Quno: official and on-chain data for bots">
+<meta property="og:description" content="Paid per call over x402 (USDC on Base). Base token risk check $0.02, x402 market data $0.01, weather $0.004. No account, no API key.">
+<meta property="og:image" content="https://fitzyracing1.github.io/quno-site/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Quno: official and on-chain data for bots, paid per call over x402 (USDC on Base)">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Quno: official and on-chain data for bots">
+<meta name="twitter:description" content="Paid per call over x402 (USDC on Base). Base token risk check $0.02, x402 market data $0.01, weather $0.004.">
+<meta name="twitter:image" content="https://fitzyracing1.github.io/quno-site/og.png">
+<meta name="twitter:image:alt" content="Quno: official and on-chain data for bots, paid per call over x402 (USDC on Base)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%233b7bff'/%3E%3Ctext x='16' y='23' font-size='20' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'%3EQ%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="wrap hero">
+  <p class="badge">x402 · USDC on Base · no account · no API key</p>
+  <h1>Quno</h1>
+  <p class="lead">Official and on-chain data for bots, paid per call over x402 (USDC on Base).</p>
+  <p class="cta">
+    <a class="button" href="https://quno-production.up.railway.app/v1/catalog">Live catalog</a>
+    <a class="button ghost" href="https://agentic.market/services/quno-production-up-railway-app">Quno on Agentic.Market</a>
+    <a class="button ghost" href="#pay">How to pay</a>
+  </p>
+  <p class="small">Cached official sources and public on-chain facts. No tracking on this page.</p>
+</header>
+
+<main>
+<section class="wrap" aria-labelledby="stat">
+  <h2 id="stat">What bots bought on x402 in the last 24 hours</h2>
+  <div class="stat">
+    <div><b>292,280</b><span>x402 purchases settled on Base (price-matched USDC transfers)</span></div>
+    <div><b>$5,496.69</b><span>USDC spent on those purchases</span></div>
+    <div><b>2,362</b><span>unique paying wallets</span></div>
+    <div><b>39,743</b><span>paid x402 services listed (3,365 hosts, median price $0.005)</span></div>
+    <p class="when">From Quno's x402 market dataset. Base window Nov 21, 2026 6:02 PM to Nov 22, 2026 6:02 PM ET; Bazaar crawl Nov 22, 2026 6:06 PM ET. "Price-matched" counts only USDC transfers into a listed payTo whose amount equals a price that service lists. The live numbers are on <code>/v1/x402/market/summary</code>.</p>
+  </div>
+</section>
+
+<section class="wrap" aria-labelledby="products">
+  <h2 id="products">Products</h2>
+  <table>
+    <thead><tr><th>Data</th><th>Route</th><th>Price per call</th></tr></thead>
+    <tbody>
+      <tr><td><b>Base token risk check</b><p>Factual checks with evidence for each one, no AI opinion: contract code, verified source, ERC-20 basics, owner/renounced, mint, pause, blacklist and upgrade functions, proxy slots, top-holder concentration, DEX liquidity and 24h volume, LP lock, token age. 0–100 score from a published rule set. Not investment advice.</p></td><td><code>/v1/token/base/{address}/risk</code></td><td class="price">$0.02</td></tr>
+      <tr><td><b>x402 market summary</b><p>What bots buy across ~40k paid x402 services: price percentiles, networks, categories, 30-day calls, new listings, 24h on-chain purchases on Base.</p></td><td><code>/v1/x402/market/summary</code></td><td class="price">$0.01</td></tr>
+      <tr><td><b>x402 top services</b><p>Top services by 30-day calls, unique payers and volume, plus top Base receiving wallets by 24h on-chain purchases.</p></td><td><code>/v1/x402/market/top</code></td><td class="price">$0.01</td></tr>
+      <tr><td><b>Weather by ZIP</b><p>NOAA NWS forecast, next 24 hours and latest observation for ZIP 02740 (New Bedford, MA).</p></td><td><code>/v1/weather/zip/02740</code></td><td class="price">$0.004</td></tr>
+      <tr><td><b>NASA DONKI space weather</b><p>Latest space-weather notifications (CMEs, radiation belt, reports).</p></td><td><code>/v1/nasa/donki</code></td><td class="price">$0.005</td></tr>
+      <tr><td><b>SatNOGS CubeSats</b><p>In-orbit CubeSats with NORAD IDs and status. Data © Libre Space Foundation and SatNOGS contributors, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, modified (filtered and summarized) by Quno.</p></td><td><code>/v1/satnogs/cubesats</code></td><td class="price">$0.005</td></tr>
+      <tr><td><b>GitHub stats</b><p>First-party aggregate public repo stats for fitzyracing1 and Earthenware-Computer. Counts only.</p></td><td><code>/v1/github/mine</code></td><td class="price">$0.01</td></tr>
+      <tr><td><b>Snapshot</b><p>Weather, NASA DONKI, GitHub stats and the SatNOGS slice in one call.</p></td><td><code>/v1/snapshot/latest</code></td><td class="price">$0.01</td></tr>
+    </tbody>
+  </table>
+  <p class="small">Base URL <code>https://quno-production.up.railway.app</code>. Prices as listed on the <a href="https://quno-production.up.railway.app/v1/catalog">live catalog</a> (free), which is the source of truth.</p>
+</section>
+
+<section class="wrap" id="pay" aria-labelledby="pay-h">
+  <h2 id="pay-h">How to pay (x402)</h2>
+  <ol>
+    <li>Call any paid route. Quno answers <b>HTTP 402</b> with a <code>PAYMENT-REQUIRED</code> header: base64 JSON with the price, asset (USDC on Base), and the address to pay.</li>
+    <li>Your x402 client signs a USDC authorization for that exact amount and retries with a <code>PAYMENT-SIGNATURE</code> header. No account and no API key.</li>
+    <li>The Coinbase CDP facilitator settles on Base, and Quno returns <b>200</b> with the JSON plus a <code>PAYMENT-RESPONSE</code> header holding the transaction hash.</li>
+  </ol>
+<pre><code>$ curl -i https://quno-production.up.railway.app/v1/weather/zip/02740
+HTTP/2 402
+content-type: application/json
+payment-required: eyJ4NDAyVmVyc2lvbiI6MiwiZXJyb3IiOiJQYXltZW50IHJlcXVpcmVkIi...
+
+{"error":"Payment required"}
+
+$ curl -s -D - -o /dev/null https://quno-production.up.railway.app/v1/weather/zip/02740 \
+    | grep -i payment-required | cut -d' ' -f2 | tr -d '\r' | base64 -d
+{
+  "x402Version": 2,
+  "error": "Payment required",
+  "resource": { "url": "https://quno-production.up.railway.app/v1/weather/zip/02740",
+                "mimeType": "application/json" },
+  "accepts": [{
+    "scheme": "exact",
+    "network": "eip155:8453",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "amount": "4000",
+    "payTo": "0x4619eEBe22C199197dC430b10220447aBd7a8D58",
+    "maxTimeoutSeconds": 300,
+    "extra": { "name": "USD Coin", "version": "2" }
+  }],
+  "extensions": { "bazaar": { ... } }
+}</code></pre>
+  <p><code>amount</code> is in USDC base units (6 decimals): 4000 = $0.004. Any x402 v2 client works, for example the official <a href="https://github.com/coinbase/x402">x402 SDKs</a>. Bad token addresses get a 400 or 404 before any payment is requested.</p>
+  <p class="note">The Base token risk check is a factual risk check, not investment advice. It reports measured, public facts with their sources; it does not predict prices or recommend buying or selling.</p>
+</section>
+</main>
+
+<footer class="wrap">
+  <p>Quno · contact <a href="mailto:Fitzyracing1@gmail.com">Fitzyracing1@gmail.com</a> · <a href="https://quno-production.up.railway.app/v1/catalog">catalog</a> · <a href="https://agentic.market/services/quno-production-up-railway-app">Agentic.Market</a></p>
+  <p>NWS, Census and NASA data are U.S. government works; Quno's copies are cached and repackaged, not official products, and not endorsed by those agencies. Not affiliated with Coinbase, Base or Agentic.Market. This page uses no cookies, analytics or trackers. Site code MIT.</p>
+</footer>
+</body>
+</html>
