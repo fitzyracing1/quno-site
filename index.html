@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Quno: official and on-chain data for bots, paid per call over x402</title>
-<meta name="description" content="Quno sells official and on-chain data to bots, paid per call over x402 in USDC on Base: Base token risk checks ($0.02), x402 market data on ~40k paid services ($0.01), NOAA weather, NASA space weather, SatNOGS CubeSats. No account, no API key.">
+<meta name="description" content="Quno sells official and on-chain data to bots, paid per call over x402 in USDC on Base: Base token risk checks ($0.005), x402 market data on ~40k paid services ($0.01), NOAA weather, NASA space weather, SatNOGS CubeSats. No account, no API key.">
 <meta name="referrer" content="no-referrer">
 <meta name="theme-color" content="#0b0f19">
 <link rel="canonical" href="https://fitzyracing1.github.io/quno-site/">
@@ -12,14 +12,14 @@
 <meta property="og:site_name" content="Quno">
 <meta property="og:url" content="https://fitzyracing1.github.io/quno-site/">
 <meta property="og:title" content="Quno: official and on-chain data for bots">
-<meta property="og:description" content="Paid per call over x402 (USDC on Base). Base token risk check $0.02, x402 market data $0.01, weather $0.004. No account, no API key.">
+<meta property="og:description" content="Paid per call over x402 (USDC on Base). Base token risk check $0.005, x402 market data $0.01, weather $0.004. No account, no API key.">
 <meta property="og:image" content="https://fitzyracing1.github.io/quno-site/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Quno: official and on-chain data for bots, paid per call over x402 (USDC on Base)">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Quno: official and on-chain data for bots">
-<meta name="twitter:description" content="Paid per call over x402 (USDC on Base). Base token risk check $0.02, x402 market data $0.01, weather $0.004.">
+<meta name="twitter:description" content="Paid per call over x402 (USDC on Base). Base token risk check $0.005, x402 market data $0.01, weather $0.004.">
 <meta name="twitter:image" content="https://fitzyracing1.github.io/quno-site/og.png">
 <meta name="twitter:image:alt" content="Quno: official and on-chain data for bots, paid per call over x402 (USDC on Base)">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%233b7bff'/%3E%3Ctext x='16' y='23' font-size='20' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'%3EQ%3C/text%3E%3C/svg%3E">
@@ -55,7 +55,7 @@
   <table>
     <thead><tr><th>Data</th><th>Route</th><th>Price per call</th></tr></thead>
     <tbody>
-      <tr><td><b>Base token risk check</b><p>Factual checks with evidence for each one, no AI opinion: contract code, verified source, ERC-20 basics, owner/renounced, mint, pause, blacklist and upgrade functions, proxy slots, top-holder concentration, DEX liquidity and 24h volume, LP lock, token age. 0–100 score from a published rule set. Not investment advice.</p></td><td><code>/v1/token/base/{address}/risk</code></td><td class="price">$0.02</td></tr>
+      <tr><td><b>Base token risk check</b><p>Factual checks with evidence for each one, no AI opinion: contract code, verified source, ERC-20 basics, owner/renounced, mint, pause, blacklist and upgrade functions, proxy slots, top-holder concentration, DEX liquidity and 24h volume, LP lock, token age. 0–100 score from a published rule set. Not investment advice.</p></td><td><code>/v1/token/base/{address}/risk</code></td><td class="price">$0.005</td></tr>
       <tr><td><b>x402 market summary</b><p>What bots buy across ~40k paid x402 services: price percentiles, networks, categories, 30-day calls, new listings, 24h on-chain purchases on Base.</p></td><td><code>/v1/x402/market/summary</code></td><td class="price">$0.01</td></tr>
       <tr><td><b>x402 top services</b><p>Top services by 30-day calls, unique payers and volume, plus top Base receiving wallets by 24h on-chain purchases.</p></td><td><code>/v1/x402/market/top</code></td><td class="price">$0.01</td></tr>
       <tr><td><b>Weather by ZIP</b><p>NOAA NWS forecast, next 24 hours and latest observation for ZIP 02740 (New Bedford, MA).</p></td><td><code>/v1/weather/zip/02740</code></td><td class="price">$0.004</td></tr>

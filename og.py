@@ -15,7 +15,7 @@ mono=ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf",30
 d.text((80,70),"Quno",font=F(800,120),fill=(255,255,255))
 d.text((80,225),"Official and on-chain data for bots,",font=F(600,50),fill=(230,236,248))
 d.text((80,288),"paid per call over x402 (USDC on Base).",font=F(600,50),fill=(230,236,248))
-items=["Base token risk  $0.02","x402 market data  $0.01","Weather by ZIP  $0.004","NASA space weather  $0.005"]
+items=["Base token risk  $0.005","x402 market data  $0.01","Weather by ZIP  $0.004","NASA space weather  $0.005"]
 x,y=80,395
 for i,t in enumerate(items):
     bx=x+(i%2)*530; by=y+(i//2)*70
